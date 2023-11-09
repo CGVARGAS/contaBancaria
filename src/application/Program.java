@@ -9,13 +9,15 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		double valor;
 		
 		ContaBancaria conta  = new ContaBancaria();
 		
 		System.out.print("Entre com o número da conta: ");
 		int numero = sc.nextInt();
+		sc.nextLine(); // Quebra de linha 
 		System.out.print("Entre com o nome do cliente: ");
-		String cliente = sc.next();
+		String cliente = sc.nextLine();
 		
 		ContaBancaria contaBancaria = new ContaBancaria(numero, cliente);
 		
@@ -24,15 +26,23 @@ public class Program {
 		active = sc.next().charAt(0);
 		
 		if (active == 's') {
-			System.out.print("informe valor do depósito: ");
-			double valor = sc.nextDouble();
+			System.out.print("Informe valor do depósito: ");
+			valor = sc.nextDouble();
 			contaBancaria.deposito(valor);
-			System.out.print(contaBancaria);
-		
-		}else {
+			System.out.print("\nDados da conta: " + contaBancaria);
 			
-			System.out.print(contaBancaria);
+		}else {
+			System.out.print("\nDados da conta: " + contaBancaria);
 		}
+		System.out.print("\nInforme valor do depósito: ");
+		valor = sc.nextDouble();
+		contaBancaria.deposito(valor);
+		System.out.print("\nDados da conta atualizados: " + contaBancaria);
+		
+		System.out.print("\nInforme valor do saque: ");
+		valor = sc.nextDouble();
+		contaBancaria.saque(valor);
+		System.out.print("\nDados da conta atualizados: " + contaBancaria);
 		
 		sc.close();
 

@@ -50,12 +50,11 @@ public class ContaBancaria {
 	
 	@Override
 	public String toString() {
-		return "Dados da conta: "
-							+ "\nConta: "
-							+ numeroConta 
-							+ ", Cliente: " 
-							+ nome 
-							+ ", Saldo: $ " 
-							+ String.format("%.2f", saldo);
+		return "\nConta: "
+						+ numeroConta 
+						+ ", Cliente: " 
+						+ nome 
+						+ ", Saldo: $ " 
+						+ String.format("%.2f", saldo);
 	}	
 }
