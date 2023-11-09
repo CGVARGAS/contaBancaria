@@ -18,10 +18,9 @@ public class ContaBancaria {
 		this.tarifa = tarifa;
 	}
 	
-	public ContaBancaria(int numeroConta, String nome, double saldo) {
+	public ContaBancaria(int numeroConta, String nome) {
 		this.numeroConta = numeroConta;
 		this.nome = nome;
-		this.saldo = saldo;
 	}
 
 	public int getNumeroConta() {
@@ -57,7 +56,6 @@ public class ContaBancaria {
 							+ ", Cliente: " 
 							+ nome 
 							+ ", Saldo: $ " 
-							+ String.format("%.2f", nome);
+							+ String.format("%.2f", saldo);
 	}	
-		
 }
