@@ -35,8 +35,6 @@ Para utilizar a classe `ContaBancaria`, basta instanciá-la e realizar operaçõ
 
 ---
 
-Para incluir o diagrama de classe, substitua "link-para-o-seu-diagrama-de-classe.png" pelo caminho ou URL onde a imagem do diagrama de classe está localizada.
-
 Este README fornece uma visão geral do programa e da classe `ContaBancaria`. Certifique-se de adicionar mais informações, como requisitos, instruções de compilação ou execução, se necessário.
 
 Caso tenha mais detalhes ou informações específicas para adicionar ao README, sinta-se à vontade para expandi-lo de acordo com as necessidades do seu projeto.
