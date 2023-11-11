@@ -11,11 +11,11 @@ public class ContaBancaria {
 	public ContaBancaria() {
 	}
 	
-	public ContaBancaria(int numeroConta, String nome, double saldo, double tarifa) {
+	public ContaBancaria(int numeroConta, String nome, double depositoInicial, double tarifa) {
 		this.numeroConta = numeroConta;
 		this.nome = nome;
-		this.saldo = saldo;
 		this.tarifa = tarifa;
+		deposito(depositoInicial); // Utilizando o método 'deposito()' para encapsular a regra do negócio do depósito no construtor.
 	}
 	
 	public ContaBancaria(int numeroConta, String nome) {
@@ -55,6 +55,7 @@ public class ContaBancaria {
 						+ ", Cliente: " 
 						+ nome 
 						+ ", Saldo: $ " 
-						+ String.format("%.2f", saldo);
+						+ String.format("%.2f", saldo)
+						+ "\n";
 	}	
 }
